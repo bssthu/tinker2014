@@ -46,8 +46,21 @@ source ./install_isolated/setup.bash
 
 # download
 cd $CI_SOURCE_PATH
-cd tinker2014/downloaded/src/
-git clone https://github.com/ros/std_msgs.git
+cd downloaded/src/
+# std_msgs
+git clone https://github.com/ros/std_msgs.git -b groovy-devel
+# common_msgs
+git clone https://github.com/ros/common_msgs.git -b indigo-devel
+cd common_msgs/
+rm -rf .*
+mv * ../
+cd ..
+# pcl_ros
+git clone https://github.com/ros-perception/perception_pcl.git -b indigo-devel
+cd perception_pcl/
+rm -rf .*
+mv * ../
+cd ..
 
 rospack profile
 
