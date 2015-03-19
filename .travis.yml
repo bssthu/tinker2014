@@ -27,6 +27,7 @@ before_install: # Use this to prepare the system to install prerequisites or dep
   - sudo apt-get install -qq -y libboost-program-options-dev
   - bash -x .travis/compile_indigo.bash
 before_script: # Use this to prepare your build for testing e.g. copy database configurations, environment variables, etc.
+  - cd $CI_SOURCE_PATH
   - source ros_catkin_ws/install_isolated/setup.bash
 script: # All commands must exit with code 0 on success. Anything else is considered failure.
   - make downloaded
