@@ -24,6 +24,7 @@ before_install: # Use this to prepare the system to install prerequisites or dep
   - sudo apt-get update -qq
   - sudo apt-get install -qq -y libopencv-dev
   - sudo apt-get install -qq -y libpcl-1.7-all-dev
+  - sudo apt-get install -qq -y libboost-program-options-dev
   - bash -x .travis/compile_indigo.bash
 before_script: # Use this to prepare your build for testing e.g. copy database configurations, environment variables, etc.
   - source ros_catkin_ws/install_isolated/setup.bash
