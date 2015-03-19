@@ -8,6 +8,7 @@
 sudo apt-get install -qq -y python-rosdep python-rosinstall-generator
 sudo apt-get install -qq -y python-wstool python-rosinstall
 sudo apt-get install -qq -y python-empy python-nose
+sudo apt-get install -qq -y libpoco-dev
 sudo apt-get install -qq -y build-essential
 
 sudo rosdep init
