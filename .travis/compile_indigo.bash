@@ -39,6 +39,24 @@ cmake ..
 make
 sudo make install
 cd ../../..
+# urdfdom_headers
+cd src/
+git clone https://github.com/ros/urdfdom_headers.git
+cd urdfdom_headers/
+mkdir build
+cd build/
+cmake ..
+sudo make install
+cd ../../..
+# urdfdom
+cd src/
+git clone https://github.com/ros/urdfdom.git
+cd urdfdom
+mkdir build
+cd build/
+cmake ..
+sudo make install
+cd ../../..
 
 ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release
 
