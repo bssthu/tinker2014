@@ -15,7 +15,7 @@ sudo rosdep init
 rosdep update
 
 # build catkin
-cd $HOME
+export CI_SOURCE_PATH=$(pwd)
 mkdir ros_catkin_ws
 cd ros_catkin_ws/
 
@@ -45,7 +45,8 @@ cd ../../..
 source ./install_isolated/setup.bash
 
 # download
-cd $HOME/tinker2014/downloaded/src/
+cd $CI_SOURCE_PATH
+cd tinker2014/downloaded/src/
 git clone https://github.com/ros/std_msgs.git
 
 rospack profile
