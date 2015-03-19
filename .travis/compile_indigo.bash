@@ -5,7 +5,9 @@
 # 
 
 # prepare
-sudo apt-get install -qq -y python-rosdep python-rosinstall-generator python-wstool python-rosinstall build-essential
+sudo apt-get install -qq -y python-rosdep python-rosinstall-generator
+sudo apt-get install -qq -y python-wstool python-rosinstall python-empy
+sudo apt-get install -qq -y build-essential
 
 sudo rosdep init
 rosdep update
