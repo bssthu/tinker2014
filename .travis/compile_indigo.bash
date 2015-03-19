@@ -15,6 +15,7 @@ sudo rosdep init
 rosdep update
 
 # build catkin
+cd $HOME
 mkdir ros_catkin_ws
 cd ros_catkin_ws/
 
@@ -42,5 +43,6 @@ cd ../../..
 ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release
 
 source ./install_isolated/setup.bash
+
 rospack profile
 

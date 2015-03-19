@@ -11,7 +11,7 @@ notifications:
 cache:
   apt: true
   directories:
-  - ros_catkin_ws
+  - $HOME/ros_catkin_ws
 env:
   - ROS_DISTRO=indogo ROSWS=wstool BUILDER=catkin
 before_install: # Use this to prepare the system to install prerequisites or dependencies
