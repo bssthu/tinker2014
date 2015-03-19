@@ -10,6 +10,21 @@ sudo apt-get install -qq -y python-wstool python-rosinstall
 sudo apt-get install -qq -y python-empy python-nose python-sip-dev
 sudo apt-get install -qq -y libpoco-dev libtinyxml-dev
 sudo apt-get install -qq -y build-essential
+sudo apt-get install -qq -y liblz4-dev
+
+# compile opencv
+mkdir cv
+cd cv/
+wget http://sourceforge.net/projects/opencvlibrary/files/opencv-unix/2.4.9/opencv-2.4.9.zip
+unzip opencv-2.4.9.zip 
+cd opencv-2.4.9/
+mkdir build
+cd build/
+cmake ..
+make -j8
+sudo make install
+sudo ldconfig
+cd ../../..
 
 sudo rosdep init
 rosdep update
