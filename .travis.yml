@@ -29,4 +29,6 @@ before_install: # Use this to prepare the system to install prerequisites or dep
 before_script: # Use this to prepare your build for testing e.g. copy database configurations, environment variables, etc.
   - source ros_catkin_ws/install_isolated/setup.bash
 script: # All commands must exit with code 0 on success. Anything else is considered failure.
+  - make downloaded
+  - rospack profile
   - make driver logic decision

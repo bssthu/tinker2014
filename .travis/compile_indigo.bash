@@ -44,5 +44,9 @@ cd ../../..
 
 source ./install_isolated/setup.bash
 
+# download
+cd $HOME/tinker2014/downloaded/src/
+git clone https://github.com/ros/std_msgs.git
+
 rospack profile
 
