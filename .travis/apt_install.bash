@@ -30,3 +30,7 @@ sudo apt-get install -qq -y libogg-dev libtheora-dev
 # pip
 sudo pip install -q numpy
 
+# symbol link
+sudo ln -s /usr/lib/libflann_cpp_s.a /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
+sudo ln -s /usr/lib/libqhull.so /usr/lib/x86_64-linux-gnu/libqhull.so
+
