@@ -22,4 +22,5 @@ sudo apt-get install -qq -y libpoco-dev libtinyxml-dev
 sudo apt-get install -qq -y liblz4-dev libgtest-dev
 sudo apt-get install -qq -y build-essential
 sudo apt-get install -qq -y pyqt4-dev-tools libqt4-dev python-qt4-dev
+sudo apt-get install -qq -y libfltk1.3-dev
 
