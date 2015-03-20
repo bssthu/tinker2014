@@ -17,7 +17,18 @@ cd opencv-2.4.9/
 mkdir build
 cd build/
 cmake ..
+# try more
 make -j4
+if [ ! $? -eq 0 ]; then
+    make -j4
+    if [ ! $? -eq 0 ]; then
+        make -j4
+        if [ ! $? -eq 0 ]; then
+            make -j4
+        fi
+    fi
+fi
+
 sudo make install
 sudo ldconfig
 
