@@ -24,3 +24,6 @@ sudo apt-get install -qq -y build-essential
 sudo apt-get install -qq -y pyqt4-dev-tools libqt4-dev python-qt4-dev
 sudo apt-get install -qq -y libfltk1.3-dev yaml-cpp
 
+# pip
+sudo pip install -q numpy
+
