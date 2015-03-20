@@ -32,8 +32,9 @@ before_install: # Use this to prepare the system to install prerequisites or dep
   - bash -x .travis/compile_indigo.bash
   #- bash -x .travis/missing_packages.bash
 before_script: # Use this to prepare your build for testing e.g. copy database configurations, environment variables, etc.
-  - cd $CI_SOURCE_PATH
+  - cd $HOME
   - source ros_catkin_ws/install_isolated/setup.bash
+  - cd $CI_SOURCE_PATH
 script: # All commands must exit with code 0 on success. Anything else is considered failure.
   - make downloaded
   - rospack profile
