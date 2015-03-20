@@ -11,7 +11,8 @@ sudo add-apt-repository -y ppa:gezakovacs/lz4
 sudo apt-get update -qq
 
 sudo apt-get install -qq -y libpcl-1.7-all-dev
-sudo apt-get install -qq -y libboost-program-options-dev libboost-signals-dev
+sudo apt-get install -qq -y libboost-program-options-dev libboost-test-dev
+sudo apt-get install -qq -y libboost-signals-dev
 
 # prepare
 sudo apt-get install -qq -y python-rosdep python-rosinstall-generator
