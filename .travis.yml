@@ -14,7 +14,7 @@ cache:
   - $HOME/ros_catkin_ws
   - $HOME/cv
 env:
-  - ROS_DISTRO=indogo ROSWS=wstool BUILDER=catkin
+  - ROS_DISTRO=indigo ROSWS=wstool BUILDER=catkin
 before_install: # Use this to prepare the system to install prerequisites or dependencies
   # Define some config vars
   - export CI_SOURCE_PATH=$(pwd)
