@@ -24,8 +24,8 @@ before_install: # Use this to prepare the system to install prerequisites or dep
   - echo "Testing branch $TRAVIS_BRANCH of $REPOSITORY_NAME"
   - bash -x .travis/apt_install.bash
   - bash -x .travis/install_cv.bash
-  - bash -x .travis/build_catkin.bash
   - bash -x .travis/console_bridge.bash
+  - bash -x .travis/build_catkin.bash
   - bash -x .travis/compile_indigo.bash
   #- bash -x .travis/missing_packages.bash
 before_script: # Use this to prepare your build for testing e.g. copy database configurations, environment variables, etc.
