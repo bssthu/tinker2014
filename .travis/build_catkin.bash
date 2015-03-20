@@ -11,7 +11,7 @@ rosdep update
 
 # build catkin
 cd $HOME
-mkdir ros_catkin_ws
+mkdir -p ros_catkin_ws
 cd ros_catkin_ws/
 
 rosinstall_generator desktop_full --rosdistro indigo --deps --wet-only --tar > indigo-desktop-full-wet.rosinstall

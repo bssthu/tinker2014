@@ -7,6 +7,7 @@
 export CI_SOURCE_PATH=$(pwd)
 
 cd $HOME
+mkdir -p ros_catkin_ws
 cd ros_catkin_ws
 # for console_bridge in 12.04
 cd src/
