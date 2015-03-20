@@ -22,7 +22,7 @@ else
     wstool init -j8 src indigo-desktop-full-wet.rosinstall
 fi
 
-rosdep install --from-paths src --ignore-src --rosdistro indigo -y
+rosdep install -q --from-paths src --ignore-src --rosdistro indigo -y
 
 cd $CI_SOURCE_PATH
 
