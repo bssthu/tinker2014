@@ -37,6 +37,15 @@ cd build/
 cmake ..
 sudo make install -j4
 cd ../../..
+# collada-dom
+wget http://sourceforge.net/projects/collada-dom/files/latest/download
+tar -xf download
+cd collada-dom-2.4.0/
+mkdir build
+cd build/
+cmake ..
+sudo make install -j4
+cd ../../..
 
 cd $CI_SOURCE_PATH
 

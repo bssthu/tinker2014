@@ -18,11 +18,14 @@ sudo apt-get install -qq -y libboost-signals-dev libboost-python-dev
 sudo apt-get install -qq -y python-rosdep python-rosinstall-generator
 sudo apt-get install -qq -y python-wstool python-rosinstall
 sudo apt-get install -qq -y python-empy python-nose python-sip-dev
-sudo apt-get install -qq -y libpoco-dev libtinyxml-dev
-sudo apt-get install -qq -y liblz4-dev libgtest-dev
 sudo apt-get install -qq -y build-essential
+sudo apt-get install -qq -y libpoco-dev libtinyxml-dev libbz2-dev
+sudo apt-get install -qq -y liblz4-dev libgtest-dev libcurl4-openssl-dev
 sudo apt-get install -qq -y pyqt4-dev-tools libqt4-dev python-qt4-dev
 sudo apt-get install -qq -y libfltk1.3-dev yaml-cpp libassimp-dev
+sudo apt-get install -qq -y libltdl-dev libxinerama-dev uuid-dev
+sudo apt-get install -qq -y collada-dom-dev libgtk2.0-dev gazebo
+sudo apt-get install -qq -y libogg-dev libtheora-dev
 
 # pip
 sudo pip install -q numpy
