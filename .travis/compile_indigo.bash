@@ -6,6 +6,7 @@
 
 export CI_SOURCE_PATH=$(pwd)
 
+cd $HOME
 cd ros_catkin_ws
 ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release
 
