@@ -15,8 +15,8 @@ cd console_bridge/
 mkdir build
 cd build/
 cmake ..
-make
-sudo make install
+make -j4
+sudo make install -j4
 cd ../../..
 # urdfdom_headers
 cd src/
@@ -25,7 +25,7 @@ cd urdfdom_headers/
 mkdir build
 cd build/
 cmake ..
-sudo make install
+sudo make install -j4
 cd ../../..
 # urdfdom
 cd src/
@@ -34,7 +34,7 @@ cd urdfdom
 mkdir build
 cd build/
 cmake ..
-sudo make install
+sudo make install -j4
 cd ../../..
 
 cd $CI_SOURCE_PATH
