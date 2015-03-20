@@ -14,6 +14,7 @@ cache:
   directories:
   - $HOME/ros_catkin_ws
   - $HOME/cv
+  - $HOME/boost
 env:
   - ROS_DISTRO=indigo ROSWS=wstool BUILDER=catkin
 before_install: # Use this to prepare the system to install prerequisites or dependencies
