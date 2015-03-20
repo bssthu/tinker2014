@@ -14,7 +14,7 @@ cd $HOME
 mkdir ros_catkin_ws
 cd ros_catkin_ws/
 
-rosinstall_generator ros_comm --rosdistro indigo --deps --wet-only --tar > indigo-desktop-full-wet.rosinstall
+rosinstall_generator desktop_full --rosdistro indigo --deps --wet-only --tar > indigo-desktop-full-wet.rosinstall
 
 if [ -d "src" ]; then
     wstool update -j 4 -t src
