@@ -28,6 +28,7 @@ sudo apt-get install -qq -y collada-dom-dev libgtk2.0-dev gazebo
 sudo apt-get install -qq -y libogg-dev libtheora-dev
 
 # pip
+sudo chown travis /home/travis/.cache/pip
 sudo pip install -q numpy
 
 # symbol link
