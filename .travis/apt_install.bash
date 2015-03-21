@@ -27,9 +27,11 @@ sudo apt-get install -qq -y libltdl-dev libxinerama-dev uuid-dev
 sudo apt-get install -qq -y collada-dom-dev libgtk2.0-dev gazebo
 sudo apt-get install -qq -y libogg-dev libtheora-dev
 
+sudo apt-get install -qq -y python-numpy
+
 # pip
-sudo chown travis /home/travis/.cache/pip
-sudo pip install -q numpy
+#sudo chown travis /home/travis/.cache
+#sudo pip install -q numpy
 
 # symbol link
 sudo ln -s /usr/lib/libflann_cpp_s.a /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
