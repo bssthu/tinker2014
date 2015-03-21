@@ -20,19 +20,22 @@ mkdir -p build
 cd build/
 cmake ..
 # try more
-make -j4
+make -j8
 if [ ! $? -eq 0 ]; then
     make -j4
     if [ ! $? -eq 0 ]; then
-        make -j4
+        make -j2
         if [ ! $? -eq 0 ]; then
-            make
+            make -j1
         fi
     fi
 fi
 
 sudo make install
 sudo ldconfig
+
+cd $HOME
+sudo rm -rf cv/
 
 cd $CI_SOURCE_PATH
 
