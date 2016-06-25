@@ -9,14 +9,10 @@
 
 import sys
 import os
-import rospkg
 
-script = rospkg.RosPack().get_path('answer_questions') \
-        + '/../../../ui/Google-Text-To-Speech/GoogleTextToSpeech.py'
-mp3dir = rospkg.RosPack().get_path('answer_questions') \
-        + '/../../../share/d_say/sounds'
-txtdir = rospkg.RosPack().get_path('answer_questions') \
-        + '/../../../share/answer_questions'
+script = os.path.join(sys.path[0], '../Google-Text-To-Speech/GoogleTextToSpeech.py')
+mp3dir = os.path.join(sys.path[0], '../../share/d_say/sounds')
+txtdir = os.path.join(sys.path[0], '../../share/answer_questions')
 
 def getAnswerSpeech(answer):
     #answer.replace("'", r"\'")
